@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: "krf2s6",
+  projectId: "5sqi7d",
   e2e: {
     video: true,
     baseUrl: "http://qamid.tmweb.ru",
