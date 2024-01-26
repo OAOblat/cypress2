@@ -1,0 +1,23 @@
+{
+  "emailInput": "input[type=\"email\"]",
+  "passwordInput": "[type=\"password\"]",
+  "loginButton": ".login__button",
+  "adminTitle": ".page-header__subtitle",
+  "movieTitle": ".conf-step__movie-title",
+  "seancesMovieTitle": ".conf-step__seances-movie-title",
+  "seancesMovieStart": ".conf-step__seances-movie-start",
+  "seansesMovieHall": ".conf-step__seances-title",
+  "startSales": "#start-sales",
+  "selectHallButton":"input.conf-step__radio",
+  "startSalesButton":"#start-sales button",
+
+  "pageNavDay": ".page-nav__day",
+  "bookingButton": ".acceptin-button",
+  "ticketTitle": ".ticket__details.ticket__title",
+  "ticketTime": ".ticket__details.ticket__start",
+  "ticketHall": ".ticket__info-wrapper p:nth-child(3) .ticket__hall",
+  "ticketChairs": ".ticket__details.ticket__chairs",
+  "movieHall": ".movie-seances__hall",
+  "movieTime": ".movie-seances__time",
+  "buyingScheme": ".buying-scheme__wrapper"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "cypress2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --record --key 6b95ed0e-e472-428c-a918-61d6dcec1dec --browser chrome"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.3"
+  }
+}

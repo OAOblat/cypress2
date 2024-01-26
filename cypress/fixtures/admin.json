@@ -1,0 +1,14 @@
+{
+  "validLogin": {
+    "email": "qamid@qamid.ru",
+    "password": "qamid"
+  },
+  "invalidPassword": {
+    "email": "qamid@qamid.ru",
+    "password": "12345"
+  },
+  "invalidEmail": {
+    "email": "12345@12345.ru",
+    "password": "qamid"
+  }
+}
