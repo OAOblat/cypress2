@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:booking": "cypress run --record --group booking -s \"cypress/e2e/booking.cy.js\" --ci-build-id 12",
-    "test:loginAdmin": "cypress run --record --group login -s \"cypress/e2e/loginAdmin.cy.js\" --ci-build-id 12",
-    "test:mainPage": "cypress run --record --group mainPage -s \"cypress/e2e/mainPage.cy.js\" --ci-build-id 12",
+    "test:booking": "cypress run --record --group bookingPage -s \"cypress/e2e/booking.cy.js\" --ci-build-id 16",
+    "test:loginAdmin": "cypress run --record --group adminPage -s \"cypress/e2e/loginAdmin.cy.js\" --ci-build-id 16",
+    "test:mainPage": "cypress run --record --group mainPage -s \"cypress/e2e/mainPage.cy.js\" --ci-build-id 16",
     "test:parallel": "run-p -c test:booking test:loginAdmin test:mainPage"
   },
   "author": "",
