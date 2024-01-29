@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --record --key 6accfe32-4416-4995-b92b-61ed3e24c8f9 --browser chrome"
+    "test": "cypress run --record --browser chrome"
   },
   "author": "",
   "license": "ISC",
