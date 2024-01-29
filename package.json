@@ -15,10 +15,7 @@
     "test:mainPage:electron": "cypress run --record --group mainPage -s \"cypress/e2e/mainPage.cy.js\" --ci-build-id 25 --browser electron",
     "test:parallel:chrome": "run-p -c test:booking:chrome test:loginAdmin:chrome test:mainPage:chrome",
     "test:parallel:firefox": "run-p -c test:booking:firefox test:loginAdmin:firefox test:mainPage:firefox",
-    "test:parallel:electron": "run-p -c test:booking:electron test:loginAdmin:electron test:mainPage:electron",
-    "test:all:chrome": "cypress run --record --group chrome -s \"cypress/e2e/**/*.cy.js\" --ci-build-id 27 --browser chrome",
-    "test:all:electron": "cypress run --record --group electron -s \"cypress/e2e/**/*.cy.js\" --ci-build-id 27 --browser electron",
-    "test:parallel:chrome-electron": "run-p -c test:all:chrome test:all:electron"
+    "test:parallel:electron": "run-p -c test:booking:electron test:loginAdmin:electron test:mainPage:electron"
   },
   "author": "",
   "license": "ISC",
