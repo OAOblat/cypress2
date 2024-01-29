@@ -13,9 +13,7 @@ Cypress.Commands.add("getAndSaveMoviesData", () => {
       cy.get(selectors.seancesMovieTitle).each(($movie) => {
         if ($movie.text().trim() === movieTitle) {
           let hallName = $movie
-            .parent()
-            .parent()
-            .parent()
+            .closest(selectors.seancesHall)
             .find(selectors.seansesMovieHall)
             .text()
             .trim();
@@ -97,11 +95,9 @@ Cypress.Commands.add("selectRandomMovieHallAndTime", () => {
     cy.wrap(randomTime).as("selectedTime");
     cy.wrap(randomHall).as("selectedHall");
 
-    cy.get(".movie")
+    cy.get(selectors.movie)
       .contains(randomMovie)
-      .parent()
-      .parent()
-      .parent()
+      .closest(selectors.movie)
       .find(selectors.movieHall)
       .contains(randomHall)
       .parent()
