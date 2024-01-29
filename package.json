@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --record --browser chrome"
+    "test:booking": "cypress run --record --group booking -s \"cypress/e2e/booking.cy.js\" --ci-build-id 12",
+    "test:loginAdmin": "cypress run --record --group login -s \"cypress/e2e/loginAdmin.cy.js\" --ci-build-id 12",
+    "test:mainPage": "cypress run --record --group mainPage -s \"cypress/e2e/mainPage.cy.js\" --ci-build-id 12",
+    "test:parallel": "run-p -c test:booking test:loginAdmin test:mainPage"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.6.3"
+    "cypress": "^13.6.3",
+    "npm-run-all": "^4.1.5"
   }
 }
