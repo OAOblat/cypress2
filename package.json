@@ -4,11 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --record"
+    "test:booking:chrome": "cypress run --record --group bookingPage -s \"cypress/e2e/booking.cy.js\" -b chrome",
+    "test:loginAdmin:chrome": "cypress run --record --group adminPage -s \"cypress/e2e/loginAdmin.cy.js\" -b chrome",
+    "test:booking:firefox": "cypress run --record --group bookingPage -s \"cypress/e2e/booking.cy.js\" -b firefox",
+    "test:loginAdmin:firefox": "cypress run --record --group adminPage -s \"cypress/e2e/loginAdmin.cy.js\" -b firefox",
+    "test:booking:electron": "cypress run --record --group bookingPage -s \"cypress/e2e/booking.cy.js\" -b electron",
+    "test:loginAdmin:electron": "cypress run --record --group adminPage -s \"cypress/e2e/loginAdmin.cy.js\" -b electron",
+    "test:parallel:chrome": "run-p -c test:booking:chrome test:loginAdmin:chrome",
+    "test:parallel:firefox": "run-p -c test:booking:firefox test:loginAdmin:firefox",
+    "test:parallel:electron": "run-p -c test:booking:electron test:loginAdmin:electron",
+    "test:chrome": "cypress run --record --group chrome -s \"cypress/e2e/*.js\" -b chrome",
+    "test:electron": "cypress run --record --group electron -s \"cypress/e2e/*.js\" -b electron",
+    "test:firefox": "cypress run --record --group firefox -s \"cypress/e2e/*.js\" -b firefox",
+    "test:bookingFolder": "cypress run --record --group booking -s \"cypress/e2e/booking/*.js\"",
+    "test:pageFolder": "cypress run --record --group page -s \"cypress/e2e/page/*.js\"",
+    "test:parallel:folders": "run-p test:bookingFolder test:pageFolder",
+    "test:parallel:chrome:electron:firefox": "run-p test:chrome test:electron test:firefox"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.6.3"
+    "cypress": "^13.6.3",
+    "npm-run-all": "^4.1.5"
   }
 }

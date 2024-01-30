@@ -1,4 +1,4 @@
-const selectors = require("../fixtures/selectors.json");
+const selectors = require("../../fixtures/selectors.json");
 
 it("Should be possible to book", () => {
   cy.loginGetAndSaveMoviesData();

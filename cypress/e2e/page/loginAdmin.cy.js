@@ -1,5 +1,5 @@
-const selectors = require("../fixtures/selectors.json");
-const admin = require("../fixtures/admin.json");
+const selectors = require("../../fixtures/selectors.json");
+const admin = require("../../fixtures/admin.json");
 
 describe("Testing admin login", () => {
   it("Successful admin login", () => {
